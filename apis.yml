@@ -1,7 +1,32 @@
 aid: kiddowear
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kiddowear.png
 name: KiddoWear
-description: KiddoWear is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  KiddoWear (now operating as Kiddo Health) is a pediatric healthcare technology
+  company that offers a connected care platform for capturing and sharing health
+  data for children with physical and behavioral health challenges. The platform
+  combines biometric tracking of 12+ biomarkers (respiration, heart rate, stress
+  scores, and sleep), family journaling of behavior and health status between
+  visits, educational family resources, care navigation that integrates with
+  medical records and clinical workflows, and a provider dashboard that surfaces
+  insights and real-time health trends. Kiddo Health serves behavioral health
+  conditions such as ADHD and autism spectrum disorder and metabolic conditions
+  such as childhood obesity and diabetes, bridging gaps between families,
+  providers, and care teams across health plans, health systems, and employers.
+  A Techstars-backed portfolio company added to the API Evangelist network. As of
+  this profile the company publishes no public developer API, documentation, or
+  SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/kiddowear/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +36,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Health
+- Healthcare
+- Pediatrics
+- Behavioral Health
+- Digital Health
+- Connected Care
+- Remote Patient Monitoring
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +53,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kiddowear-domain-security.yml
 - type: Website
-  url: https://kiddowear.com/
+  url: https://kiddo.health/
+- type: PrivacyPolicy
+  url: https://kiddo.health/privacy-policy
+- type: TermsOfService
+  url: https://kiddo.health/terms
+- type: Support
+  url: https://kiddo.health/faq
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
